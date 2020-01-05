@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
 }
+body {
+  font-family: 'Gilroy-Regular';
+  color: #2F4858;
+}
 *,
 *::before,
 *::after {
@@ -10,11 +14,17 @@ html {
 a {
   display: inline;
   text-decoration: none;
-  color: #fff;
+  color: #2F4858;
+  
 }
 ul,
 li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+max-width: 1200px;
+margin: 0 auto;
 }
