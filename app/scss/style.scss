@@ -26,11 +26,11 @@
   height: 90px;
   align-items: center;
 }
+.footer-logo,
 .header-logo { 
   font-size: 30px;
   line-height: 37px;
-  /* padding-top: 26px;
-  padding-bottom: 26px; */
+  .footer-logo__text,
   .header-logo__text {
     font-family: 'Gilroy-ExtraBold';
   }
@@ -146,6 +146,7 @@
     line-height: 29px;
     margin-bottom: 70px;
   }
+  
   .banner-slider___auto-link {
     font-family: 'Gilroy-Bold';
     font-size: 18px;
@@ -169,6 +170,8 @@
       border-radius: 12px;
       background-color: #C4C4C4;
       border: none;
+      outline-style: none;
+      cursor: pointer;
      }
    }
     li.slick-active {
@@ -399,6 +402,7 @@ margin-top: 80px;
   color: #888888;
   margin-right: 15px;
 }
+.advice,
 .blog {
   font-size: 16px;
   line-height: 19px;
@@ -407,11 +411,102 @@ margin-top: 80px;
   border-radius: 3px;
   padding: 6px 12px;
 }
+.advice {
+  background-color: $red;
+}
 
+.artical-block {
+  display: flex;
+  justify-content: space-between;
+}
 
+.artical-block__item {
+  margin-top: 30px;
+  max-width: 384px;
+  .artical-block__item-text {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 140%;
+  }
+  img {
+    
+    margin-bottom: 15px;
+  }
+}
+.artical-block__item:nth-child(1) {
+  max-width: 360px;
+}
+.artical-block__item:nth-child(2) {
+  margin-right: 25px;
+}
 
+.artical-btn {
+display: flex;
+justify-content: center;
+}
+.btn {
+  border: none;
+  background-color: $red;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFF;
+  padding: 20px 34px;
+  border-radius: 7px;
+  outline-style: none;
+  margin-top: 60px;
+}
+.footer-shadow {
+  box-shadow: 0px -1px 6px rgba(21, 21, 21, 0.1);
+}
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  /* border-bottom: 1px solid #C4C4C4; */
+  
+}
 
+.footer-logo {
+  margin-top: 40px;
+}
+
+.info-nav__title,
+.product-nav__title {
+  font-family: 'Gilroy-Bold';
+  font-size: 20px;
+  line-height: 24px;
+}
+.info-nav__list-item,
+.product-nav__list-item {
+  margin-top: 10px;
+  a {
+  font-size: 16px;
+  line-height: 19px;
+  }
+}
+.product-nav__list-item:nth-child(5)  {
+  margin-top: 15px; 
+  font-family: 'Gilroy-Bold';
+}
+
+.contact-footer {
+margin-top: 40px;
+}
+.contact-footer__list-number {
+  font-family: 'Gilroy-Bold';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+}
+.footer-sup {
+  border-top: 1px solid #C4C4C4;
+  text-align: right;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 45px;
+}
 @import "media";
 
 
