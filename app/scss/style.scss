@@ -63,6 +63,12 @@
 
 .menu {
   margin-left: 15px;
+  .btn-catalog {
+    border: none;
+    background-color: #FFF;
+    outline-style: none;
+    cursor: pointer;
+  }
 }
 .menu-line {
   position: relative;
@@ -98,6 +104,15 @@
   color: $red;
 }
 
+
+.nav {
+  display: none;
+}
+.nav.open{
+ 
+  display: block;
+}
+
 .nav-block {
   display: flex;
   justify-content: space-between;
@@ -110,7 +125,7 @@
 .nav-list {
   display: flex;
   .nav-list__item {
-    margin-left: 80px;
+    margin-left: 40px;
     .nav-list__item-link:hover {
       padding-bottom: 10px;
       color: $red;
@@ -507,6 +522,154 @@ margin-top: 40px;
   line-height: 19px;
   margin-top: 45px;
 }
+.footer-sup.color {
+  border-top: 1px solid red;
+}
+.breadcrumb-autochemistry,
+.breadcrumb {
+  display: flex;
+  
+}
+ 
+
+.breadcrumb-item__autochemistry,
+.breadcrumb-item {
+ display: none;
+  a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #888888;
+    margin-right: 10px;
+    
+    &::after {
+      content: "\/";
+      margin-left: 10px;
+    }
+  }
+}
+.breadcrumb-item__autochemistry {
+  display: block;
+}
+.breadcrumb-item.open:nth-child(1) {
+  display: block;
+}
+.breadcrumb-item.open:nth-child(2) {
+  display: block;
+}
+
+
+
+/* autochemistry-catalog */
+
+
+.paintwork-catalog__title,
+.autochemistry-catalog__title {
+  text-align: left;
+  font-family: 'Gilroy-Bold';
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 30px;
+}
+
+.block__title {
+  font-family: 'Gilroy-Bold';
+  font-size: 28px;
+  line-height: 29px;
+  position: relative;
+  margin-left: 20px;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 54px;
+    background: #E53935;
+    border-radius: 6px;
+    left: -20px;
+    top: -10px;
+  
+  }
+}
+.paintwork-catalog__content,
+.autocosmetics-block,
+.autochemistry-catalog__content {
+  display: flex;
+  .paintwork-catalog__content-text,
+  .autochemistry-catalog__content-text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  
+  .autochemistry-catalog__content-text::nth-child(1) {
+    margin-right: 60px;
+  }
+ 
+}
+.paintwork-catalog__content-text::nth-child(1) {
+  margin-right: 60px;
+}
+.paintwork-block,
+.autocosmetics-block,
+.autochemistry-block {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #EDEDED;
+  margin-top: 40px;
+}
+.paintwork-block__item,
+.autochemistry-block__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: 120px;
+  font-weight: 600;
+  font-family: 'Gilroy-Bold';
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 60px;
+  margin-right: 50px;
+  padding: 15px 0;  
+  .paintwork-block__item-for,
+  .autochemistry-block__item-for {
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+  .paintwork-block__item-name,
+  .autochemistry-block__item-name {
+    margin-top: 0;
+  }
+  .about-link {
+    background-color: $red;
+    color: #FFF;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 7px;
+  }
+}
+.paintwork-block__item:hover,
+.autochemistry-block__item:hover {
+  transform: scale(1.2);
+  transition-duration: .4s;
+  box-shadow: 0px -1px 6px rgba(21, 21, 21, 0.1);
+  .about-link {
+    background-color: #FFF;
+    border: 1px solid $red;
+    color: $red;
+    transition-duration: .4s;
+  }
+}
+
+.paintwork-catalog,
+.autocosmetics-catalog {
+  margin-top: 100px;
+}
+
+
+
+
+
+
 @import "media";
 
 
