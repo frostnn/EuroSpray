@@ -498,10 +498,14 @@ justify-content: center;
 }
 .info-nav__list-item,
 .product-nav__list-item {
+
   margin-top: 10px;
   a {
   font-size: 16px;
   line-height: 19px;
+  }
+  a:hover {
+    color: $red;
   }
 }
 .product-nav__list-item:nth-child(5)  {
@@ -563,6 +567,7 @@ margin-top: 40px;
 
 
 /* autochemistry-catalog */
+.about-title,
 .semi-catalog__title,
 .equipments-catalog__title,
 .paintwork-catalog__title,
@@ -784,8 +789,8 @@ margin-top: 40px;
   box-shadow: 0px -1px 6px rgba(21, 21, 21, 0.1);
   .about-link {
     background-color: #FFF;
-    border: 1px solid #00A26A;
-    color: #00A26A;
+    border: 1px solid $red;
+    color: $red;
     transition-duration: .4s;
   }
   
@@ -809,8 +814,8 @@ margin-top: 40px;
   box-shadow: 0px -1px 6px rgba(21, 21, 21, 0.1);
   .about-link {
     background-color: #FFF;
-    border: 1px solid #00A0AA;
-    color: #00A0AA;
+    border: 1px solid #00A26A;
+    color: #00A26A;
     transition-duration: .4s;
   }
 }
@@ -824,12 +829,159 @@ margin-top: 40px;
   margin-top: 0;
 }
 
-/* .banner-slider___auto {
-  background-color: #DFDFDF, #F5F5F5);
-  box-shadow: 0px 4px 4px rgba(253, 253, 253, 0.25);
-  height: 633px;
-} */
 
+
+
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about-advantage {
+  display: flex;
+  flex-direction: column;
+  .about-advantage__item {
+    max-width: 320px;
+    margin-top: 57px;
+    border-bottom: 2px solid #DFDFDF;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 65px;
+      height: 2px;
+      background-color: #DFDFDF;
+      bottom: -14px;
+      right: -62px;
+      transform: rotate(22deg);
+      border-bottom-left-radius: 10px;
+    }
+    .about-advantage__title {
+      position: relative;
+      font-family: 'Gilroy-Bold';
+      font-size: 24px;
+      line-height: 29px;
+      display: inline-block;
+       margin-bottom: 14px;
+      &::before {
+        position: absolute;
+        content: url(../img/about-img/surface1.png);
+        top: -6px;
+        left: -57px;
+      }
+    }
+   
+
+    
+    .about-advantage__text{
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}
+
+.about-advantage:nth-child(1) {
+  margin-left: 60px;
+}
+.about-advantage__img {
+  transform: rotate(-11deg);
+  margin-top: 35px;
+}
+.about-advantage__img.scroll{
+  transform: rotate(8deg);
+  transition-duration: .9s;
+  
+
+}
+
+.about-advantage__item.leader  { 
+  &::after {
+    bottom: 10px;
+    right: -62px;
+    transform: rotate(-22deg);
+    border-bottom-left-radius: 3px;
+  }
+  .about-advantage__title{
+    border-bottom-right-radius: 3px;
+      &::before {
+        content: url(../img/about-img/surface2.png);
+    }
+    }
+  }
+  .about-advantage__item.assortment { 
+    border-bottom-right-radius: 3px;
+    &::after {
+      bottom: 10px;
+      right: -62px;
+      transform: rotate(-22deg);
+      border-bottom-left-radius: 3px;
+    }
+    .about-advantage__title {
+      &::before {
+        content: url(../img/about-img/surface3.png);
+    }
+  }
+}
+.about-advantage__item.scope { 
+  border-bottom-right-radius: 3px;
+  &::after {
+    bottom: -14px;
+    left: -62px;
+    transform: rotate(-22deg);
+    border-bottom-left-radius: 3px;
+  }
+  .about-advantage__title {
+    &::before {
+      content: url(../img/about-img/surface4.png);
+    }
+  } 
+}
+.about-advantage__item.size { 
+  border-bottom-right-radius: 3px;
+  &::after {
+    bottom: 10px;
+    left: -62px;
+    transform: rotate(22deg);
+    border-bottom-left-radius: 3px;
+  }
+  .about-advantage__title {
+    &::before {
+      content: url(../img/about-img/surface5.png);
+    }
+  } 
+}    
+.about-advantage__item.reputation { 
+  border-bottom-right-radius: 3px;
+  &::after {
+    bottom: 10px;
+    left: -62px;
+    transform: rotate(22deg);
+    border-bottom-left-radius: 3px;
+  }
+  .about-advantage__title {
+    &::before {
+      content: url(../img/about-img/surface6.png);
+    }
+   }
+}
+.about-advantage.scroll {
+  .about-advantage__item {
+    border-color: $red;
+    transition-duration: 4s;
+    &::after{ 
+      background-color: $red;
+      transition-duration: 4s;
+    }
+    
+  }
+  
+}
+.about-advantage__img.scroll{
+  transform: rotate(8deg);
+  transition-duration: 2s;
+}
 @import "media";
 
 

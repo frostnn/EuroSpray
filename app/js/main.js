@@ -42,4 +42,15 @@ $('.btn-product__new').click(function() {
   $('.btn-product__new').toggleClass('color');
   $('.btn-product__porular.color').toggleClass( 'color');
 });
+
+
+
+
+});
+
+$(document).ready(function(){
+$(window).scroll(function(){
+  $('.about-advantage__img').addClass('scroll');
+  $('.about-advantage').addClass('scroll');
+});
 });
