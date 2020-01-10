@@ -982,6 +982,109 @@ margin-top: 40px;
   transform: rotate(8deg);
   transition-duration: 2s;
 }
+
+
+
+
+/* CONTACTS */
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.contacts-info__address {
+  position: relative;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  &::before {
+    position: absolute;
+    content: url(../img/contacts-img/local.png);
+    left: -40px;
+    top: -8px;
+
+  }
+}
+.contacts-info__department {
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.contacts-info__sales-number {
+  margin-top: 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url(../img/contacts-img/number.png);
+    left: -40px;
+    top: -6px;
+  }
+}
+.contacts-info__sales-name {
+  margin-bottom: 7px;
+}
+.contacts-map {
+  background-image: url(../img/contacts-img/map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 835px;
+  height: 600px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-field {
+  border: 1px solid #D9D8D8;
+  border-radius: 7px;
+  height: 45px;
+  width: 400px;
+  color: #2F4858;
+  font-size: 16px;
+}
+.form-field:hover {
+  color: $red;
+  background-color: none;
+}
+.form-field:active{
+  color: $red;
+  background-color: none;
+}
+.form-areatext {
+  border: 1px solid #D9D8D8;
+  border-radius: 7px;
+  width: 400px;
+  overflow: auto;
+	resize: none;
+}
+.form-btn {
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background-color: $red;
+  border-radius: 7px;
+  border: none;
+  padding: 20px 60px;
+  margin-top: 27px;
+  margin-left: 90px;
+
+}
+.form-title {
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.form-text {
+  font-size: 16px;
+  line-height: 131.99%;
+  margin-bottom: 15px;
+}
 @import "media";
 
 
