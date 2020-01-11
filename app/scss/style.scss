@@ -1085,6 +1085,54 @@ margin-top: 40px;
   line-height: 131.99%;
   margin-bottom: 15px;
 }
+.news {
+  .mosbild {
+    margin-bottom: 30px;
+  }
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+.btn-list__item {
+  margin-right: 5px;
+  button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2F4858;
+    border-radius: 4px;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #fff;
+    outline-style: none;
+    cursor: pointer;
+  }
+  button:active {
+    color: #FFF;
+    border: 1px solid $red;
+    background-color: $red;
+  }
+}
+.btn-list__item.right,
+.btn-list__item.left {
+  margin-right: 35px;
+  margin-left: 35px;
+  button {
+    background-color: $red;
+    border: none;
+    background-image: url(../img/left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.btn-list__item.right {
+  button {
+    background-image: url(../img/right.png);
+  }
+}
 @import "media";
 
 
