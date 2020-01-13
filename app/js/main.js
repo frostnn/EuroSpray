@@ -29,7 +29,7 @@ $('.product-slider').slick({
   $('.footer-sup').css( "border-top", "1px solid red" );
 }); */
 $('.btn-product__porular').click(function() {
-  $('.product-slider').toggle();
+  $('.product-slider').show();
   $('.new-slider').hide();
   $('.btn-product__porular').toggleClass('color');
   $('.btn-product__new.color').toggleClass( 'color');
@@ -37,13 +37,35 @@ $('.btn-product__porular').click(function() {
 });
 
 $('.btn-product__new').click(function() {
-  $('.new-slider').toggle();
   $('.product-slider').hide();
+  $('.new-slider').show();
   $('.btn-product__new').toggleClass('color');
-  $('.btn-product__porular.color').toggleClass( 'color');
+  $('.btn-product__porular').toggleClass( 'color');
 });
 
 
+
+$('.btn-item__characteristic').click(function() {
+  $('.item-characteristic').show();
+  $('.item-application').hide();
+  $('.btn-item__characteristic').toggleClass('color');
+  $('.btn-item__application.color').toggleClass( 'color');
+  
+});
+
+$('.btn-item__application').click(function() {
+  $('.item-characteristic').hide();
+  $('.item-application').show();
+  $('.btn-item__characteristic').toggleClass('color');
+  $('.btn-item__application').toggleClass( 'color');
+});
+
+
+
+$('.popup-with-form').magnificPopup({
+  type: 'inline',
+  focus: '#name',
+});
 
 
 });
@@ -54,3 +76,4 @@ $(window).scroll(function(){
   $('.about-advantage').addClass('scroll');
 });
 });
+
