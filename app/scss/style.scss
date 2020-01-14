@@ -668,6 +668,7 @@ margin-top: 40px;
   line-height: 29px;
   position: relative;
   margin-left: 20px;
+  z-index: 100;
   &::before {
     position: absolute;
     content: '';
@@ -677,30 +678,43 @@ margin-top: 40px;
     border-radius: 6px;
     left: -20px;
     top: -10px;
-  
   }
 }
 .block__title.paintwork {
     &::before {
-    
     background: #00A0AA;
 }
-
 }
-
 .block__title.equipments {
   &::before {
-  
   background: #00A26A;
 }
 }
 .block__title.semi {
   &::before {
-  
   background: #FF8A43;
 }
-
 }
+
+/* .scroll-effect {
+  width: 10px;
+  height: 54px;
+  background: #E53935;
+  border-radius: 6px;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  } */
+/*   .block__title.on {
+color: #fff;
+transition-delay: .4s;
+  }
+  .scroll-effect.on {
+    width: 134px;
+    transition-delay: .4s;
+  } */
+
+
 .semi-catalog__content,
 .equipments-catalog__content,
 .paintwork-catalog__content,

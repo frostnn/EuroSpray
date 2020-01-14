@@ -87,15 +87,18 @@
     </div>
   </section>
  
-
-
   <div class="contacts-form">
-    <form action="">
+    <form >
       <h3 class="form-title">Связаться с нами</h3>
+      	<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Euro Spray">
+		<input type="hidden" name="admin_email" value="zni41218@zzrgg.com">
+		<input type="hidden" name="form_subject" value="contact">
+		<!-- END Hidden Required Fields -->
       <p class="form-text">Ваше имя</p>
-      <input type="text" size="40" class="form-field">
+      <input type="text" name="Name" size="40" class="form-field" required>
       <p class="form-text">Телефон или Email</p>
-      <input type="text" size="40" class="form-field">
+      <input type="text" name="number" size="40" class="form-field" required>
       <p class="form-text">Написать в отдел</p>
       <select name="" id=""   class="form-field">
       <optgroup class="form-field" >
