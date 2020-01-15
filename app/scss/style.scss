@@ -60,14 +60,23 @@
    
   }
 }
-
+.menu.mob,
+.mob-menu {
+  display: none;
+}
+.btn-catalog__mob {
+  border: none;
+  background-color: #FFF;
+  outline-style: none;  
+}
 .menu {
   margin-left: 15px;
+  cursor: pointer;
   .btn-catalog {
     border: none;
     background-color: #FFF;
     outline-style: none;
-    cursor: pointer;
+    
   }
 }
 .menu-line {
@@ -77,6 +86,7 @@
   background-color: $red;
   display: inline-block;
   margin-right: 15px;
+  border-radius: 4px;
   &::after {
     content: '';
     position: absolute;
@@ -85,6 +95,7 @@
     background-color: $red;
     top: -14px;
     right: 0;
+    border-radius: 4px;
   }
   &::before {
     content: '';
@@ -94,6 +105,7 @@
     background-color: $red;
     top: -7px;
     right: 0;
+    border-radius: 4px;
   }
 }
 
@@ -135,10 +147,11 @@
   }
 }
 .banner {
-  height: 550px;
-    background-image: url(../img/kredit.png);
+  background-image: url(../img/kredit.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  height: 550px;
 }
 .banner-bg {
   background: linear-gradient(bottom, #DFDFDF, #F5F5F5);
@@ -226,7 +239,6 @@ animation: car 3s;
 
 .slick-dots {
   display: flex;
-  margin-left: 200px;
     margin-top: 30px;
    li {
      margin-right: 34px;
@@ -252,6 +264,14 @@ animation: car 3s;
       
     }
 }
+
+.banner-slider {
+  .slick-dots {
+    justify-content: flex-end;
+    margin-right: 100px;
+  }
+
+}
 .btn-item,
 .btn-product {
 display: flex;
@@ -267,7 +287,7 @@ cursor: pointer;
   font-family: 'Gilroy-Bold';
   font-size: 24px;
   line-height: 29px;
-  margin-right: 164px;
+  
   color: #2F4858;
   outline-style: none;
   cursor: pointer;
@@ -355,6 +375,8 @@ cursor: pointer;
 
 .autochemistry {
   background-image: url(../img/bgauto.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   min-width: 583px;
   min-height: 361px;
   position: relative;
@@ -379,6 +401,7 @@ cursor: pointer;
 .paint {
   background-image: url(../img/bgcolor.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   min-height: 361px;
   min-width: 583px;
   position: relative;
@@ -401,6 +424,7 @@ cursor: pointer;
 .equipment{
   background-image: url(../img/bgequip.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   min-height: 361px;
   position: relative;
   min-width: 583px;
@@ -426,6 +450,7 @@ cursor: pointer;
 .semis {
   background-image: url(../img/bgsemi.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   min-height: 361px;
   min-width: 583px;
   position: relative;

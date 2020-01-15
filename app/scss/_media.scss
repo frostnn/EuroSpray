@@ -1,0 +1,544 @@
+@media (max-width: $screen-xl) {
+  .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    }
+  .slider-content__text {
+    max-width: 377px;
+      }
+  .semis,
+  .equipment,
+  .paint,
+  .autochemistry {
+    min-width: 555px;
+  }
+  .semis,
+  .equipment {
+    margin-top: 10px;
+  }
+  .artical-block__item {
+    margin-top: 15px;
+    max-width: 379px;
+}
+}
+/* @media (min-width: $screen-lg-max) {
+  .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    }
+  .slider-content__text {
+    max-width: 377px;
+      }
+  .semis,
+  .equipment,
+  .paint,
+  .autochemistry {
+    min-width: 555px;
+  }
+  .semis,
+  .equipment {
+    margin-top: 10px;
+  }
+  .artical-block__item {
+    margin-top: 15px;
+    max-width: 379px;
+}
+}  */
+@media (max-width: $screen-lg) {
+  .wrapper {
+    max-width: 	960px;
+    margin: 0 auto;
+    }
+    .catalog {
+      margin-top: 86px;
+      margin-bottom: -37px;
+    }
+    .artical-block__item {
+      img {
+        width: 300px;
+        height: 200px;
+      }
+      .artical-block__item-text {
+        font-size: 14px;
+      }
+    }
+    .artical-block__item:nth-child(2) {
+      margin-right: -10px;
+    }
+
+    .semis,
+    .equipment,
+    .paint,
+    .autochemistry {
+      min-width: 465px;
+      min-height: 305px;
+      img {
+        width: 270px;
+        bottom: 20px;
+        right: 8px;
+      }
+    }
+    .paint {
+      img {
+        width: 220px;
+        right: 16px;
+      }
+    }
+    .semis,
+    .equipment {
+      margin-top: 10px;
+    }
+    .semis {
+      .miniball {
+        width: 146px;
+        bottom: 40px;
+    
+      }
+      .ball {
+        width: 171px;
+        bottom: 40px;
+      }
+    }
+    .mosbild-content {
+      .mosbild-text{
+        font-size: 15px;
+        line-height: 114%;
+        margin-bottom: 13px;
+      }
+    }
+    .banner-slider___auto  {
+      padding-left: 80px;
+    }
+    .banner-slider___auto.partnership .banner-slider___auto-text {
+     
+        font-size: 40px;
+      }
+      .img-car {
+        img {
+          width: 596px;
+          height: 400px;
+          margin-top: 83px;
+        }
+      }
+      .slider-content__text {
+        max-width: 303px;
+    }
+    .footer-logo,
+    .header-logo {
+      font-size: 29px;
+  }
+  }
+
+@media (max-width: $screen-md) {
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    }
+
+    .sub-header__info {
+      font-size: 12px;
+    }
+    .contact-list {
+       a {
+        font-size: 14px;
+       }
+    }
+    .search {
+      display: none;
+    }
+    .footer-logo,
+    .header-logo {
+      font-size: 25px;
+    }
+    .menu-text {
+      font-size: 22px;
+    }
+    .nav-block {
+      font-size: 13px;
+    }
+    .nav-list{ 
+      .nav-list__item  {
+        margin-left: 18px;
+      }
+    }
+   .slider-content__text {
+    .banner-slider___auto-title {
+      font-size: 42px;
+    }
+    .banner-slider___auto-text {
+      font-size: 20px;
+    }
+    .banner-slider___auto-link {
+      font-size: 12px;
+    }
+   }
+   .img-car {
+    img {
+      width: 438px;
+      height: 465px;
+    }
+  }
+  .slider-content__text {
+    max-width: 270px;
+  }
+  .banner-slider___auto.partnership .banner-slider___auto-text {
+      
+    font-size: 36px;
+  }
+ .product-slider__item {
+   margin-left: 50px;
+ }
+
+ .semis,
+ .paint,
+ .autochemistry {
+   min-width: 344px;
+   min-height: 230px;
+   img {
+     width: 197px;
+     bottom: 20px;
+     right: 8px;
+   }
+ }
+ .paint {
+   img {
+    width: 146px;
+    right: 12px;
+    top: 61px;
+   }
+ }
+ 
+ .equipment {
+  min-width: 344px;
+  min-height: 230px;
+  margin-top: 10px;
+  img {
+    width: 197px;
+    bottom: 20px;
+    left: 143px;
+  }
+}
+ .semis,
+ .equipment {
+   margin-top: 10px;
+ }
+ .semis {
+   .miniball {
+    width: 109px;
+    bottom: 31px;
+ 
+   }
+   .ball {
+    width: 145px;
+    bottom: 40px;
+    left: 197px;
+   }
+ }
+ .autochemistry {
+  .autochemistry-title {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+ }
+ .paint {
+  .paint-title {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+ }
+ .equipment {
+  .equipment-title {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+ }
+ .semis {
+  .semis-title {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+ }
+  .mosbild {
+    flex-direction: column;
+    align-items: center;
+    .mosbild-img {
+      margin-right: 0;
+    }
+    .mosbild-content {
+      margin-top: 30px;
+      max-width: 600px;
+    }
+  }
+  .artical-block {
+    margin-top: 20px;
+  }
+  .artical-block__item:nth-child(1) {
+    max-width: 339px;
+    img {
+      width: 281px;
+      height: 194px;
+    }
+  }
+  .artical-block__item {
+    max-width: 304px;
+  }
+  .artical-block__item:nth-child(1) {
+    display: none;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  
+  .info-nav__title,
+  .product-nav__title {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .info-nav__list-item,
+  .product-nav__list-item {
+    a {
+      font-size: 12px;
+    }
+    
+  }
+  .contact-footer {
+    margin-top: 20px;
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: $screen-sm)  {
+  .wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    }
+    .header {
+      margin-bottom: -30px;
+    }
+    .menu,
+    .contact,
+    .sub-header {
+      display: none;
+    }
+    .menu.mob {
+      display: block;
+      margin-top: 21px;
+      cursor: pointer;
+      .menu-line {
+        width: 23px;
+        height: 4px;
+        margin-right: 0;
+        border-radius: 4px;
+        &::before {
+          width: 34px;
+          height: 4px;
+          top: -11px;
+          border-radius: 4px;
+        }
+        &::after {
+          width: 48px;
+          height: 4px;
+          top: -23px;
+          border-radius: 4px;
+
+        }
+      }
+      .menu-text {
+        display: none;
+      }
+    }
+    .footer-logo,
+    .header-logo {
+      font-size: 30px;
+  }
+  .nav-block {
+    display: none;
+  }
+  .mob-menu {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 320px;
+    height: 371px;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 6px rgba(21, 21, 21, 0.1);
+    .nav-list__item  {
+      font-family: 'Gilroy-SemiBold';
+      font-size: 16px;
+      line-height: 21px;
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+    .mob_info {
+      margin-top: 40px;
+    }
+    .mob_info__list-item {
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+    .nav-list__item-link:hover {
+      color: $red;
+    }
+  }
+  
+  .btn_close {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -20px;
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../img/close.png);
+      background-repeat: no-repeat; 
+      right: -288px;
+      top: 9px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .mob-menu {
+    display: none;
+  }
+  .mob-menu.open {
+    display: block;
+  }
+  .banner-slider {
+    .slick-dots {
+      margin-top: 0;
+    }
+  }
+  .banner-bg {
+    height: 477px;
+  }
+  .slider-content__text {
+    .banner-slider___auto-title {
+      font-size: 34px;
+    }
+    .banner-slider___auto-text {
+      font-size: 18px;
+      margin-bottom: 209px;
+    }
+    .banner-slider___auto-link {
+      font-size: 10px;
+    }
+  }
+  .banner-slider___auto {
+  padding-left: 0;
+  padding-top: 50px;
+  
+}
+.slider-content {
+  flex-direction: column;
+}
+  .img-car {
+    animation: none;
+    img {
+      animation: none;
+      position: absolute;
+      top: 77px;
+      width: 337px;
+      height: 220px;
+    }
+  }
+ .btn-product__porular {
+  margin-right: 40px;
+ }
+ .product-slider__item {
+  margin-left: 10px;
+}
+
+.semis,
+.paint,
+.autochemistry {
+  min-width: 319px;
+  min-height: 210px;
+  img {
+    width: 197px;
+    bottom: 20px;
+    right: 8px;
+  }
+}
+.paint {
+  img {
+    width: 118px;
+    right: 21px;
+    top: 66px;
+  }
+}
+
+.equipment {
+  min-width: 319px;
+  min-height: 210px;
+  margin-top: 10px;
+ img {
+  width: 163px;
+  bottom: 20px;
+   left: 143px;
+ }
+}
+.semis,
+.equipment {
+  margin-top: 0;
+}
+.semis {
+  .miniball {
+    width: 101px;
+    bottom: 26px;
+
+  }
+  .ball {
+    width: 120px;
+    bottom: 30px;
+    left: 197px;
+  }
+}
+.autochemistry {
+ .autochemistry-title {
+   margin-top: 20px;
+   font-size: 22px;
+ }
+}
+.paint {
+ .paint-title {
+   margin-top: 20px;
+   font-size: 22px;
+ }
+}
+.equipment {
+ .equipment-title {
+   margin-top: 20px;
+   font-size: 22px;
+ }
+}
+.semis {
+ .semis-title {
+   margin-top: 20px;
+   font-size: 22px;
+ }
+}
+  .artical-title {
+    margin-top: 90px;
+  }
+  .mosbild-img {
+    img {
+      width: 319px;
+    }
+  }
+  .artical-block {
+    flex-direction: column;
+    img {
+      width: 319px;
+    }
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer-sup {
+   
+    font-size: 14px;
+  }
+}
