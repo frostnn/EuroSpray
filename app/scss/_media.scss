@@ -542,3 +542,111 @@
     font-size: 14px;
   }
 }
+
+
+
+
+/* ITEM CATALOG */
+
+
+
+
+@media (max-width: $screen-sm)  {
+  .item {
+    flex-direction: column;
+  }
+    .wrapper {
+      max-width: 290px;
+      margin: 0 auto;
+      overflow: hidden;
+  }
+  .item-color {
+    flex-wrap: wrap;
+    .item-color__box {
+      margin-top: 20px;
+    }
+  }
+  .item-img {
+    width: 303px;
+  }
+  .breadcrumb-item__autochemistry {
+    a {
+      font-size: 10px;
+    }
+  }
+  .btn-item {
+    margin-top: 50px;
+    .btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .btn-item__application,
+  .btn-item__characteristic {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .artical-btn__views {
+    margin-bottom: 140px;
+  }
+  .footer {
+    margin-top: 0;
+  }
+
+
+/* ABOUT */
+
+  .about {
+flex-direction: column;
+}
+.about-advantage {
+  margin-left: 58px;
+  img {
+    width: 300px;
+  }
+  
+}
+.about-advantage:nth-child(1) {
+  margin-right: 60px;
+
+}
+
+.about-advantage__item {
+  max-width: 185px;
+}
+.about-advantage__img {
+width: 250px;
+height: 400px;
+}
+.about-advantage__item.scope,
+.about-advantage__item.reputation,
+.about-advantage__item.size {
+  width: 180px;
+}
+}
+
+
+@media (max-width: $screen-md) {
+  .about-advantage__img {
+    width: 300px;
+    margin-right: 60px;
+    margin-left: 60px;
+
+    }
+    
+}
+
+
+
+/* cooperation */
+
+
+@media (max-width: $screen-sm)  {
+  .form-field {
+    width: 300px;
+  }
+  .form-btn {
+    margin-left: 46px;
+    margin-bottom: 100px;
+  }
+}
