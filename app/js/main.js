@@ -73,26 +73,32 @@ $('.btn-item__application').click(function() {
 
 $('.block__title.autochem').click(function() {
   $('.autochemistry-block.autochem').toggleClass('close');
+  $('.arrowDown1').toggleClass('up');
 });
 
 $('.block__title.color').click(function() {
   $('.paintwork-block.color').toggleClass('close');
+  $('.arrowDown3').toggleClass('up')
 });
 
 $('.block__title.lacquer').click(function() {
   $('.paintwork-block.lacquer').toggleClass('close');
+  $('.arrowDown4').toggleClass('up')
 });
 
 $('.block__title.spriming').click(function() {
   $('.paintwork-block.spriming').toggleClass('close');
+  $('.arrowDown5').toggleClass('up')
 });
 
 $('.block__title.equipments').click(function() {
   $('.equipments-block.equipments').toggleClass('close');
+  $('.arrowDown').toggleClass('up')
 });
 
-$('.block__title.semi').click(function() {
+ $('.block__title.semi').click(function() {
   $('.semi-block.semi').toggleClass('close');
+  $('.arrowDown').toggleClass('up')
 });
 
 
@@ -173,15 +179,22 @@ $(document).ready(function(){
   
   let autocosmeticsToggleCatalog = document.querySelector('.block__title.autocosm');
   let autocosmeticsCatalog = document.querySelector('.autocosmetics-block.autocosm');
+  let arrowDown = document.querySelector('.arrowDown2');
  
 
   autocosmeticsToggleCatalog.addEventListener('click', function(){
-    autocosmeticsCatalog.classList.toggle('close');
+     autocosmeticsCatalog.classList.toggle('close');
+      arrowDown.classListAdd('up'); 
    
   });
 
 
+/* let arrow = document.querySelector('block__title.semi.test') ,
+span = document.getElementsByTagName('span');
 
+arrowToggle.addEventListener('click', function(){
+console.log('click')
+  /* span.style.background = "url(/img/arrowUp.png)"; */
 
 
 

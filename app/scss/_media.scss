@@ -423,7 +423,7 @@
       margin-bottom: 209px;
     }
     .banner-slider___auto-link {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
   .banner-slider___auto {
@@ -433,7 +433,7 @@
 }
 .slider-content {
   flex-direction: column;
-  max-height: 430px;
+  height: 430px;
 }
   .img-car {
     animation: none;
@@ -631,18 +631,7 @@
     &::before {
       display: none;
     }
-    &::after {
-      content: '';
-      position: absolute  ;
-      width: 15px;
-      height: 30px;
-      right: 33px;
-      background-image: url(/img/arrowUp.png);
-      background-repeat: no-repeat;
-      background-position: right ;
-      background-size: contain;
-    }
-
+   
    }
 
 
@@ -657,7 +646,7 @@
    .block__title.semi,
    .block__title.spriming,
    .block__title.autocosm {
-      margin-bottom: 100px;
+      margin-bottom: 70px;
    }
    .block__title.color,
    .block__title.lacquer,
@@ -672,7 +661,28 @@
    .block__title.semi {
     background-color: #FF8A43;
    }
-
+   
+  .arrowDown,
+  .arrowDown1,
+  .arrowDown2,
+  .arrowDown3,
+  .arrowDown4,
+  .arrowDown5 {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    width: 15px;
+    height: 30px;
+    background-image: url(/img/arrowDown.png);
+    background-repeat: no-repeat; 
+    
+ }
+  .up {
+   
+    background-image: url(/img/arrowUp.png);
+   
+  }
 
 /* ABOUT */
 
