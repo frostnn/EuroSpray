@@ -360,7 +360,7 @@
     position: absolute;
     top: 0;
     z-index: 100;
-    width: 320px;
+    width: 290px;
     height: 371px;
     background: #FFFFFF;
     box-shadow: 0px -1px 6px rgba(21, 21, 21, 0.1);
@@ -394,7 +394,7 @@
       content: '';
       background-image: url(../img/close.png);
       background-repeat: no-repeat; 
-      right: -288px;
+      right: -266px;
       top: 9px;
       width: 30px;
       height: 30px;
@@ -433,6 +433,7 @@
 }
 .slider-content {
   flex-direction: column;
+  max-height: 430px;
 }
   .img-car {
     animation: none;
@@ -458,14 +459,15 @@
   min-height: 210px;
   img {
     width: 197px;
-    bottom: 20px;
-    right: 8px;
+    bottom: 14px;
+    right: 32px;
+    
   }
 }
 .paint {
   img {
     width: 118px;
-    right: 21px;
+    right: 50px;
     top: 66px;
   }
 }
@@ -477,7 +479,7 @@
  img {
   width: 163px;
   bottom: 20px;
-   left: 143px;
+   left: 127px;
  }
 }
 .semis,
@@ -488,12 +490,12 @@
   .miniball {
     width: 101px;
     bottom: 26px;
-
+    left: 66px;
   }
   .ball {
     width: 120px;
     bottom: 30px;
-    left: 197px;
+    left: 166px;
   }
 }
 .autochemistry {
@@ -592,13 +594,91 @@
   .footer {
     margin-top: 0;
   }
+  .autochemistry-catalog__content {
+    flex-direction: column;
+  }
+  .paintwork-catalog, 
+  .autocosmetics-catalog {
+    margin-top: 30px;
+  }
+  .block__title.three{
+    margin-top: 0;
+  }
+  .semi-block__item,
+  .equipments-block__item,
+  .paintwork-block__item,
+  .autochemistry-block__item {
+    margin-right: 11px;
+    margin-left: 13px;
+    transition: 16s;
+  }
+
+  .close {
+  display: none;
+  }
+  .block__title.three{
+    margin-bottom: 50px;
+  } 
+  .block__title {
+    background-color: $red;
+    color: #FFFFFF;
+    width: 289px;
+    padding: 15px 0 15px  30px;
+    text-align: left;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-left: 0;
+    &::before {
+      display: none;
+    }
+    &::after {
+      content: '';
+      position: absolute  ;
+      width: 15px;
+      height: 30px;
+      right: 33px;
+      background-image: url(/img/arrowUp.png);
+      background-repeat: no-repeat;
+      background-position: right ;
+      background-size: contain;
+    }
+
+   }
+
+
+   .block__title.equipments,
+   .block__title.semi,
+   .block__title.color, 
+   .block__title.autochem {
+     margin-top: 50px;
+   }
+   
+   .block__title.equipments,
+   .block__title.semi,
+   .block__title.spriming,
+   .block__title.autocosm {
+      margin-bottom: 100px;
+   }
+   .block__title.color,
+   .block__title.lacquer,
+   .block__title.spriming {
+    background-color: #00A0AA;
+   }
+
+   .block__title.equipments {
+    background-color: #00A26A;
+   }
+
+   .block__title.semi {
+    background-color: #FF8A43;
+   }
 
 
 /* ABOUT */
 
-  .about {
+.about {
 flex-direction: column;
-}
+  }
 .about-advantage {
   margin-left: 58px;
   img {
@@ -648,5 +728,41 @@ height: 400px;
   .form-btn {
     margin-left: 46px;
     margin-bottom: 100px;
+  }
+}
+
+/* Contacts */
+
+
+@media (max-width: $screen-sm)  {
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-map {
+    margin-top: 60px;
+    max-width: 378px;
+    max-height: 292px;
+  }
+
+  .contacts-form {
+   align-items: flex-start;
+    .form-field {
+      width: 288px;
+    }
+    .form-areatext{
+      width: 288px; 
+    }
+    .form-btn {
+      font-size: 15px;
+      padding: 10px 40px;      
+      margin-left: 68px;
+    }
   }
 }

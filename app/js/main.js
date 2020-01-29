@@ -5,44 +5,6 @@ arrows: false,
 dots: true,
 });
 
-/* $('.product-slider').slick({
-  speed: 600,
-  slidesToShow: 6,
-  slidesToScroll: 1,
-  arrows: false,
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 2500,
- 
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint:  576,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-  }); */
   $('.new-slider').slick({
     speed: 600,
     slidesToShow: 6,
@@ -97,12 +59,45 @@ $('.btn-item__characteristic').click(function() {
   
 });
 
+
 $('.btn-item__application').click(function() {
   $('.item-characteristic').hide();
   $('.item-application').show();
   $('.btn-item__characteristic').toggleClass('color');
   $('.btn-item__application').toggleClass( 'color');
 });
+
+
+/* Toggle catalog items */
+
+
+$('.block__title.autochem').click(function() {
+  $('.autochemistry-block.autochem').toggleClass('close');
+});
+
+$('.block__title.color').click(function() {
+  $('.paintwork-block.color').toggleClass('close');
+});
+
+$('.block__title.lacquer').click(function() {
+  $('.paintwork-block.lacquer').toggleClass('close');
+});
+
+$('.block__title.spriming').click(function() {
+  $('.paintwork-block.spriming').toggleClass('close');
+});
+
+$('.block__title.equipments').click(function() {
+  $('.equipments-block.equipments').toggleClass('close');
+});
+
+$('.block__title.semi').click(function() {
+  $('.semi-block.semi').toggleClass('close');
+});
+
+
+/* ---------------------- */
+
 
 
 
@@ -172,4 +167,22 @@ $(document).ready(function(){
        
       ]
     });
+    
   });
+  
+  
+  let autocosmeticsToggleCatalog = document.querySelector('.block__title.autocosm');
+  let autocosmeticsCatalog = document.querySelector('.autocosmetics-block.autocosm');
+ 
+
+  autocosmeticsToggleCatalog.addEventListener('click', function(){
+    autocosmeticsCatalog.classList.toggle('close');
+   
+  });
+
+
+
+
+
+
+ 
