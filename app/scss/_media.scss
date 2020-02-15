@@ -307,6 +307,9 @@
       font-size: 14px;
     }
   }
+  .autochemistry-catalog__content-text:nth-child(1) {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: $screen-sm)  {
@@ -441,7 +444,7 @@
       animation: none;
       position: absolute;
       top: 77px;
-      width: 337px;
+      width: 317px;
       height: 220px;
     }
   }
@@ -455,29 +458,29 @@
 .semis,
 .paint,
 .autochemistry {
-  min-width: 319px;
-  min-height: 210px;
+  min-width: 288px;
+  min-height: 188px;
   img {
-    width: 197px;
+    width: 157px;
     bottom: 14px;
-    right: 32px;
+    right: 11px;
     
   }
 }
 .paint {
   img {
-    width: 118px;
-    right: 50px;
+    width: 104px;
+    right: 21px;
     top: 66px;
   }
 }
 
 .equipment {
-  min-width: 319px;
-  min-height: 210px;
+  min-width: 288px;
+  min-height: 188px;
   margin-top: 10px;
  img {
-  width: 163px;
+  width: 143px;
   bottom: 20px;
    left: 127px;
  }
@@ -488,35 +491,24 @@
 }
 .semis {
   .miniball {
-    width: 101px;
+    width: 90px;
     bottom: 26px;
     left: 66px;
   }
   .ball {
-    width: 120px;
+    width: 110px;
     bottom: 30px;
     left: 166px;
   }
 }
-.autochemistry {
- .autochemistry-title {
-   margin-top: 20px;
-   font-size: 22px;
- }
-}
-.paint {
- .paint-title {
-   margin-top: 20px;
-   font-size: 22px;
- }
-}
-.equipment {
- .equipment-title {
-   margin-top: 20px;
-   font-size: 22px;
- }
-}
+
+.autochemistry ,
+.equipment,
+.paint,
 .semis {
+  .autochemistry-title,
+  .equipment-title,
+ .paint-title,
  .semis-title {
    margin-top: 20px;
    font-size: 22px;
@@ -533,7 +525,7 @@
   .artical-block {
     flex-direction: column;
     img {
-      width: 319px;
+      width: 288px;
     }
   }
   .footer {
@@ -569,12 +561,18 @@
     }
   }
   .item-img {
+    display: flex;
+    justify-content: center;
     width: 303px;
+    
   }
   .breadcrumb-item__autochemistry {
     a {
       font-size: 10px;
     }
+  }
+  .breadcrumb-autochemistry, .breadcrumb {
+    padding-left: 10px;
   }
   .btn-item {
     margin-top: 50px;
@@ -661,7 +659,20 @@
    .block__title.semi {
     background-color: #FF8A43;
    }
+   .mfp-wrap {
+     left: 0; 
    
+  } 
+   .white-popup {
+    max-width: 308px;
+    max-height: 402px;
+    .form-field__communication {
+      margin-left: 25px;
+    }
+    .form-btn.communication {
+      margin-left: 75px;
+    }
+   }
   .arrowDown,
   .arrowDown1,
   .arrowDown2,
@@ -740,6 +751,12 @@ height: 400px;
     margin-bottom: 100px;
   }
 }
+.partnership-list {
+  margin: 20px;
+}
+.contacts-form.parthership {
+  margin-left: 17px;
+}
 
 /* Contacts */
 
@@ -775,4 +792,11 @@ height: 400px;
       margin-left: 68px;
     }
   }
+}
+.about-advantage__img.scroll {
+  max-width: 250px;
+  margin-left: 40px;
+}
+.footer-shadow {
+  margin-top: 100px;
 }
